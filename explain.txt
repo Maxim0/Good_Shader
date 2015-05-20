@@ -1,0 +1,3 @@
+Camera  - for projection, view matrixes; also for a camera
+VAO     - for initialising and refreshing shaders (manager)
+Scene   - include previous classes

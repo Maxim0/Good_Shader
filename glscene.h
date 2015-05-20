@@ -8,17 +8,25 @@
 class GLScene: public QGLWidget
 {
 private:
-	VAOManager					manager;
+	VAOManager					m_VAOmanager;
+
 	Camera						cam;
+
 	int							WIDTH;
 	int							HEIGHT;
 	float						angle;
 	float						translation;
+
 	QBasicTimer					timer;
+
 	QMatrix4x4					modelMatrix;
+
 	QGLShader*					vShader;
 	QGLShader*					fShader;
 	QGLShaderProgram*			shaderProgram;
+
+	GLfloat						x_Rotate;
+	GLfloat						y_Rotate;
 
 private:
 	void				initShaders();

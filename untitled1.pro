@@ -24,3 +24,6 @@ HEADERS  += mainwindow.h \
     camera.h
 
 FORMS    += mainwindow.ui
+
+OTHER_FILES += \
+    explain.txt
